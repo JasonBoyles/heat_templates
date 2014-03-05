@@ -8,7 +8,6 @@ parameters:
   server_hostname:
     description: Server Name
     type: string
-    required: true
     default: nodejs
     constraints:
     - length:
@@ -21,7 +20,6 @@ parameters:
   image:
     description: Server Image
     type: string
-    required: true
     default: Ubuntu 12.04 LTS (Precise Pangolin)
     constraints:
     - allowed_values:
@@ -31,7 +29,6 @@ parameters:
   flavor:
     description: Rackspace Cloud Server flavor
     type: string
-    required: true
     default: 4 GB Performance
     constraints:
     - allowed_values:
@@ -55,7 +52,6 @@ parameters:
   ssh_keypair_name:
     description: Nova keypair name for ssh access to the server
     type: string
-    required: true
     default: nodejs
 
 resources:
